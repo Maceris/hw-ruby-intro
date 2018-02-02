@@ -30,6 +30,7 @@ end
 
 def hello(name)
   # YOUR CODE HERE
+  "Hello, ".concat name
 end
 
 def starts_with_consonant? s
