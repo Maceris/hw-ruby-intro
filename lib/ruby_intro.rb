@@ -16,7 +16,14 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  ascending = arr.sort
+  ascending.each_index { |i|
+    ascending.each_index { |j|
+      if j >= i then break end
+      if ascending.at(i) + ascending.at(j) == n then return true end
+    }
+  }
+  false
 end
 
 # Part 2
