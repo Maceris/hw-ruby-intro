@@ -39,7 +39,9 @@ def starts_with_consonant? s
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+  if !s.match?('^[10]+$') then return false end
+  if s.match?('^0+$') then return true end
+  s.match?('^0*[10]*00$')
 end
 
 # Part 3
