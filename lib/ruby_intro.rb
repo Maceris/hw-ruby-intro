@@ -9,7 +9,10 @@ def sum arr
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  if arr.count == 0 then return 0 end
+  if arr.count == 1 then return arr.at 0 end
+  descending = arr.sort.reverse
+  descending.at(0) + descending.at(1)
 end
 
 def sum_to_n? arr, n
