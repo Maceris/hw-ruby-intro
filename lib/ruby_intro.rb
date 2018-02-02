@@ -29,12 +29,13 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
   "Hello, ".concat name
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
+  if s.length == 0 then return false end
+  if s.match('^\W') then return false end
+  !s.match?('^[aeiouAEIOU].*')
 end
 
 def binary_multiple_of_4? s
